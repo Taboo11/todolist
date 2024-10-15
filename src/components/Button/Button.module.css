@@ -1,0 +1,20 @@
+.button {
+  height: 55px;
+  border-radius: 10px;
+  padding: 10px 24px;
+  font-size: 30px;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  /* color: white; */
+}
+.button:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(56, 224, 226) 0%,
+    rgb(195, 164, 98) 100%
+  );
+}

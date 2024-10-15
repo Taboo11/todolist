@@ -1,0 +1,21 @@
+.todoListComplete {
+  width: 45%;
+}
+.todoListComplete h2 {
+  color: #fff;
+}
+.deleteAllButton {
+  font-family: 'Pacifico', cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 25px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  color: red;
+  transition: transform 0.3s;
+}
+.deleteAllButton:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}

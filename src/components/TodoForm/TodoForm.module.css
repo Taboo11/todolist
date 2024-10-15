@@ -1,0 +1,32 @@
+.form {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #33a6ff;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.form input {
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  padding-left: 40px;
+  font-size: 30px;
+  color: rgb(23, 22, 22);
+}
+::placeholder {
+  color: rgb(58, 29, 219);
+}

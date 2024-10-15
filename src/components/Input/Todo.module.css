@@ -1,0 +1,55 @@
+.todo {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+
+  padding: 10px;
+  color: rgb(21, 20, 20);
+  width: 90%;
+  font-size: 20px;
+  font-weight: bold;
+
+  /* background: rgb(34, 193, 195); */
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+.todoText {
+  width: 100%;
+  text-align: left;
+}
+
+.todoIcon {
+  font-size: 1.8rem;
+  margin-right: 10px;
+  color: rgba(253, 187, 45, 1);
+}
+.deleteIcon,
+.checkIcon {
+  cursor: pointer;
+  color: rgb(117, 134, 231);
+  padding: 0 4px;
+  font-size: 1.8rem;
+  transition: transform 0.3s;
+}
+.deleteIcon:hover,
+.checkIcon:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.checkIcon:hover {
+  color: green;
+}
+
+.deleteIcon:hover {
+  color: red;
+}
+
+.todoComplete {
+  background: linear-gradient(90deg, rgb(1, 45, 45) 0%, rgb(101, 70, 5) 100%);
+}

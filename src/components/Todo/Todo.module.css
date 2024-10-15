@@ -1,0 +1,82 @@
+.todo {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+
+  padding: 10px;
+  color: rgb(21, 20, 20);
+  width: 90%;
+  font-size: 20px;
+  font-weight: bold;
+
+  /* background: rgb(34, 193, 195); */
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  word-wrap: break-word; /* Переносит слово, если оно не умещается */
+  overflow-wrap: break-word; /* Альтернативное свойство для переноса */
+}
+.todoText {
+  width: 80%;
+  text-align: left;
+  overflow: hidden; /* Скрывает содержимое, выходящее за границы */
+  white-space: normal; /* Разрешает перенос текста */
+  word-wrap: break-word;
+}
+
+.todoIcon {
+  font-size: 1.8rem;
+  margin-right: 5px;
+  color: rgba(253, 187, 45, 1);
+}
+.deleteIcon,
+.checkIcon {
+  cursor: pointer;
+  color: rgb(117, 134, 231);
+  padding: 0 4px;
+  font-size: 1.8rem;
+  transition: transform 0.3s;
+}
+.deleteIcon:hover,
+.checkIcon:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.checkIcon:hover {
+  color: green;
+}
+
+.deleteIcon:hover {
+  color: red;
+}
+
+.todoComplete {
+  background: linear-gradient(90deg, rgb(1, 45, 45) 0%, rgb(101, 70, 5) 100%);
+}
+
+.twoIcon {
+  display: flex;
+}
+.inputStyle {
+  background: transparent;
+  border: none;
+  width: 70%;
+}
+
+.inputStyle:focus {
+  outline: none; /* Убирает рамку */
+  background-color: transparent; /* Убирает задний фон */
+  color: rgb(21, 20, 20);
+
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
