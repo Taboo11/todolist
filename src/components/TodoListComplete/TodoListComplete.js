@@ -16,12 +16,12 @@ export function TodoListComplete({
           className={styles.deleteAllButton}
           onClick={() => deleteAllTodos()}
         >
-          Удалить все задачи
+          Delete all tasks
         </button>
       ) : (
-        <h2>Завершенные задачи</h2>
+        <h2>Completed tasks</h2>
       )}
-      {!compeleTodosCount && <h2>Нет незавершенных задач!</h2>}
+      {!compeleTodosCount && <h2>No unfinished tasks!</h2>}
       {todos.map(
         (todo) =>
           todo.isComplete && (

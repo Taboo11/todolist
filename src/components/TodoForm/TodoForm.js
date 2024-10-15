@@ -17,9 +17,9 @@ export function TodoForm({ inputHandler }) {
           name="text"
           value={text}
           onChange={(event) => setText(event.target.value)}
-          placeholder="Задача"
+          placeholder="Your task"
         />
-        <Button type="submit">Submit</Button>
+        <Button type="submit">Add task</Button>
       </form>
     </>
   );

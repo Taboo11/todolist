@@ -9,8 +9,8 @@ export function TodoList({
 }) {
   return (
     <div className={styles.todoList}>
-      <h2>Не завершенные задачи</h2>
-      {!notNewTodosCount && <h2>Новых задач нет!</h2>}
+      <h2>Uncompleted tasks</h2>
+      {!notNewTodosCount && <h2>No new tasks!</h2>}
       {todos.map(
         (todo) =>
           !todo.isComplete && (
