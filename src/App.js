@@ -17,7 +17,11 @@ function App() {
 
   // Сохранение задач в localStorage при изменении списка задач
   useEffect(() => {
-    localStorage.setItem('todos', JSON.stringify(todos));
+    if (todos.length > 0) {
+      localStorage.setItem('todos', JSON.stringify(todos));
+    } else {
+      localStorage.removeItem('todos'); // Очищаем localStorage, если нет задач
+    }
   }, [todos]);
 
   function inputHandler(text) {
