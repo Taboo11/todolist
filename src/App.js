@@ -25,6 +25,11 @@ function App() {
   }, [todos]);
 
   function inputHandler(text) {
+    if (text.trim() === '') {
+      // Проверяем, если текст пустой или состоит только из пробелов, то выходим из функции
+      return;
+    }
+
     const newTodo = {
       text: text,
       isComplete: false,
