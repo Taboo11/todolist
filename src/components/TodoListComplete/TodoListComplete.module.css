@@ -19,3 +19,11 @@
   cursor: pointer;
   transform: scale(1.2);
 }
+
+@media (max-width: 500px) {
+  .deleteAllButton {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+}

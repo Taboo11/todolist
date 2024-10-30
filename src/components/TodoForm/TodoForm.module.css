@@ -19,14 +19,30 @@
   text-align: center;
 }
 .form input {
+  width: 60%;
   height: 35px;
   border-radius: 10px;
   border: none;
   padding: 10px;
-  padding-left: 40px;
-  font-size: 30px;
+  font-weight: 600;
+  font-size: 18px;
   color: rgb(23, 22, 22);
 }
 ::placeholder {
   color: rgb(58, 29, 219);
+}
+
+@media (max-width: 500px) {
+  .form {
+    padding: 10px;
+    gap: 5px;
+  }
+  .form input {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .form button[type='submit'] {
+    font-size: 16px;
+    font-weight: 400;
+  }
 }

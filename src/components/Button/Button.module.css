@@ -1,16 +1,26 @@
 .button {
-  height: 55px;
-  border-radius: 10px;
-  padding: 10px 24px;
-  font-size: 30px;
-  border: none;
+  display: flex; /* Центрирует текст */
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px 20px; Отступы вокруг текста */
+  font-size: 18px; /* Размер шрифта */
+  line-height: 1; /* Высота строки */
   background: linear-gradient(
     90deg,
     rgba(34, 193, 195, 1) 0%,
     rgba(253, 187, 45, 1) 100%
   );
-  /* color: white; */
+  color: black; /* Цвет текста */
+  border: none; /* Убирает границу */
+  border-radius: 8px; /* Скругляет углы */
+  cursor: pointer; /* Курсор при наведении */
+  text-align: center; /* Центрирует текст */
+  white-space: nowrap; /* Предотвращает перенос текста */
+  font-weight: 600;
+  height: 55px;
+  width: 30%;
 }
+
 .button:hover {
   background: linear-gradient(
     90deg,

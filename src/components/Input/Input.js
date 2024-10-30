@@ -5,7 +5,7 @@ import {
   RiCheckLine,
   RiLoopLeftLine,
 } from 'react-icons/ri';
-import styles from './Todo.module.css';
+import styles from './Input.module.css';
 
 function EditableTask({ todo, toggleTodoHandler, deleteTodoHandler }) {
   const [isEditing, setIsEditing] = useState(false); // Флаг редактирования

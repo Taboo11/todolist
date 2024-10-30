@@ -4,3 +4,9 @@
 .todoList h2 {
   color: #fff;
 }
+
+@media (max-width: 500px) {
+  .todoList {
+    width: 50%;
+  }
+}
