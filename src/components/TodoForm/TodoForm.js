@@ -13,13 +13,15 @@ export function TodoForm({ inputHandler }) {
   return (
     <>
       <form className={styles.form} onSubmit={addTodoHandler}>
-        <input
-          name="text"
-          value={text}
-          onChange={(event) => setText(event.target.value)}
-          placeholder="Your task"
-        />
-        <Button type="submit">Add task</Button>
+        <div className={styles.container}>
+          <input
+            name="text"
+            value={text}
+            onChange={(event) => setText(event.target.value)}
+            placeholder="Your task"
+          />
+          <Button type="submit">Add task</Button>
+        </div>
       </form>
     </>
   );
